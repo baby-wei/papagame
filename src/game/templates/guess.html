@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block jumbotron %}
+<div class="container">
+	<div class="row">
+	<div class="col-sm-6 col-sm-offset-3">
+		<img src="{% static 'image/baboon.jpg' %}" class="img-responsive" style="width:100%" />
+
+		<h1>{{title}}</h1>
+		<br>
+		<p>
+		<a class="btn btn-lg btn-primary" href="{% url 'pregift' %}" role="button">Continue &raquo;</a>
+		</p>
+	</div>
+	</div>
+</div>
+
+{% endblock %}

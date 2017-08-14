@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="text-align-center">
+	<h1>{{title}}</h1>	
+</div>
+
+{% endblock %}
+
+{% block jumbotron %}
+<div class="container">
+	<div class="row">
+	<div class="col-md-8 col-sm-offset-2">
+		<div class="videoWrapper">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/HhHwnrlZRus" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<br><br><br>
+		<p>
+		<a class="btn btn-lg btn-primary" href="{% url 'preguess' %}" role="button">Next &raquo;</a>
+		</p>
+	</div>
+	</div>
+</div>
+
+{% endblock %}

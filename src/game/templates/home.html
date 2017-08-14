@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="text-align-center">
+	<h1>{{title}}</h1>	
+</div>
+
+{% endblock %}
+
+{% block jumbotron %}
+<div class="container">
+	<div class="row">
+	<div class="col-sm-6 col-sm-offset-3">
+		<p>I can guess your favorite animal by just asking you a few questions. Do you believe me?</p>
+		<p>
+		<a class="btn btn-lg btn-primary" href="{% url 'car' %}" role="button">Let's Find Out &raquo;</a>
+		</p>
+	</div>
+	</div>
+</div>
+
+{% endblock %}

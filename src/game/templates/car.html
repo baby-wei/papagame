@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="col-sm-offset-3">
+	<h1>{{title}}</h1>	
+</div>
+
+{% endblock %}
+
+{% block jumbotron %}
+<div class="row">
+	<div class="col-md-4 col-sm-6">
+		<div class="polaroid">
+			<a href="{% url 'piano' %}">
+				<img src="{% static 'image/kenari.jpg' %}" class="img-responsive" style="width:100%" />	
+				<div class="container">
+					<p class='lead text-align-center'>Kenari</p>
+				</div>		
+			</a>		  
+		</div>
+	</div>
+	<div class="col-md-4 col-sm-6">
+		<div class="polaroid">
+			<a href="{% url 'piano' %}">
+				<img src="{% static 'image/wira.jpg' %}" class="img-responsive" style="width:100%" />	
+				<div class="container">
+					<p class='lead text-align-center'>Wira</p>
+				</div>		
+			</a>
+		</div>
+	</div>
+	<div class="col-md-4 col-sm-6">
+		<div class="polaroid">
+			<a href="{% url 'piano' %}">
+				<img src="{% static 'image/avanza.jpg' %}" class="img-responsive" style="width:100%" />	
+				<div class="container">
+					<p class='lead text-align-center'>Avanza</p>
+				</div>		
+			</a>
+		</div>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="col-sm-offset-3">
+	<h1>{{title}}</h1>	
+</div>
+
+{% endblock %}
+
+{% block jumbotron %}
+<div class="row">
+	<div class="col-md-4 col-sm-6">
+		<div class="polaroid">
+			<a href="{% url 'cartoon' %}">
+				<img src="{% static 'image/syria.jpg' %}" class="img-responsive" style="width:100%" />	
+				<div class="container">
+					<p class='lead text-align-center'>Syria</p>
+				</div>		
+			</a>		  
+		</div>
+	</div>
+	<div class="col-md-4 col-sm-6">
+		<div class="polaroid">
+			<a href="{% url 'london' %}">
+				<img src="{% static 'image/london.png' %}" class="img-responsive" style="width:100%" />	
+				<div class="container">
+					<p class='lead text-align-center'>London</p>
+				</div>		
+			</a>
+		</div>
+	</div>
+	<div class="col-md-4 col-sm-6">
+		<div class="polaroid">
+			<a href="{% url 'sarawak' %}">
+				<img src="{% static 'image/sarawak.jpg' %}" class="img-responsive" style="width:100%" />	
+				<div class="container">
+					<p class='lead text-align-center'>Sarawak</p>
+				</div>		
+			</a>
+		</div>
+	</div>
+</div>
+{% endblock %}

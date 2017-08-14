@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+
+{% block jumbotron %}
+<div class="text-align-center" style="padding-top: 100px">
+	<h1>{{title}}</h1>	
+</div>
+<br>
+<p>
+<a class="btn btn-lg btn-primary" href="{% url 'guess' %}" role="button">Answer &raquo;</a>
+</p>
+
+{% endblock %}

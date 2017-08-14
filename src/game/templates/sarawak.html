@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="text-align-center">
+	<h1>{{title}}</h1>	
+</div>
+
+{% endblock %}
+
+{% block jumbotron %}
+<div class="container">
+	<div class="row">
+	<div class="col-sm-6 col-sm-offset-3">
+		<img src="{% static 'image/cry_panda.png' %}" class="img-responsive" style="width:100%" />
+		<br>
+		<p>{{statement}}</p>
+		<p>
+		<a class="btn btn-lg btn-primary" href="{% url 'country' %}" role="button">Try again &raquo;</a>
+		</p>
+	</div>
+	</div>
+</div>
+
+{% endblock %}

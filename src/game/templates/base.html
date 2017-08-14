@@ -1,0 +1,72 @@
+<!-- load static file TEMPLATE TAG, so you can use 'static' template -->
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="{% static 'image/favicon.ico' %}">
+
+    <title>{% block head_title %}papagame{% endblock %}</title>
+
+    {% include 'head_css.html' %}
+
+    <style>
+      {% block style %}
+      body {
+        margin: 40px 0 0 0;
+      }
+      h1 {
+        
+        font-family: 'Shadows Into Light', cursive;
+      }
+      .polaroid {
+        width: 90%;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: 25px 25px 25px 25px;
+      }
+      .container {
+        text-align: center;
+        padding: 10px 20px;
+      }
+      .videoWrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+      }
+      .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      {% endblock %}
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+
+    <div class="jumbotron">
+      {% block jumbotron %}   
+      {% endblock %}
+    </div>
+
+    </div> <!-- /container -->
+
+
+    {% include 'javascript.html' %}
+  </body>
+</html>

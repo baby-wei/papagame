@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="col-sm-offset-3">
+	<h1>{{title}}</h1>	
+</div>
+
+{% endblock %}
+
+{% block jumbotron %}
+<div class="row">
+	<div class="col-md-4 col-sm-6">
+		<div class="polaroid">
+			<a href="{% url 'plant' %}">
+				<img src="{% static 'image/yamaha_u3.jpg' %}" class="img-responsive" style="width:100%" />	
+				<div class="container">
+					<p class='lead text-align-center'>Yamaha U3</p>
+				</div>		
+			</a>		  
+		</div>
+	</div>
+	<div class="col-md-4 col-sm-6">
+		<div class="polaroid">
+			<a href="{% url 'plant' %}">
+				<img src="{% static 'image/yamaha_c7x.jpg' %}" class="img-responsive" style="width:100%" />	
+				<div class="container">
+					<p class='lead text-align-center'>Yamaha C7X</p>
+				</div>		
+			</a>
+		</div>
+	</div>
+	<div class="col-md-4 col-sm-6">
+		<div class="polaroid">
+			<a href="{% url 'plant' %}">
+				<img src="{% static 'image/kawai_ca97.jpg' %}" class="img-responsive" style="width:100%" />	
+				<div class="container">
+					<p class='lead text-align-center'>Kawai CA97</p>
+				</div>		
+			</a>
+		</div>
+	</div>
+</div>
+{% endblock %}

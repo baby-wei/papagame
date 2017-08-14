@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="col-sm-offset-3">
+	<h1>{{title}}</h1>	
+</div>
+
+{% endblock %}
+
+{% block jumbotron %}
+<div class="row">
+	<div class="col-md-4 col-sm-6">
+		<div class="polaroid">
+			<a href="{% url 'videop' %}">
+				<img src="{% static 'image/pink_panther.png' %}" class="img-responsive" style="width:100%" />	
+				<div class="container">
+					<p class='lead text-align-center'>Pink Panther</p>
+				</div>		
+			</a>		  
+		</div>
+	</div>
+	<div class="col-md-4 col-sm-6">
+		<div class="polaroid">
+			<a href="{% url 'videof' %}">
+				<img src="{% static 'image/flintstone.png' %}" class="img-responsive" style="width:100%" />	
+				<div class="container">
+					<p class='lead text-align-center'>Flintstone</p>
+				</div>		
+			</a>
+		</div>
+	</div>
+	<div class="col-md-4 col-sm-6">
+		<div class="polaroid">
+			<a href="{% url 'videos' %}">
+				<img src="{% static 'image/scooby_doo.png' %}" class="img-responsive" style="width:100%" />	
+				<div class="container">
+					<p class='lead text-align-center'>Scooby Doo</p>
+				</div>		
+			</a>
+		</div>
+	</div>
+</div>
+{% endblock %}

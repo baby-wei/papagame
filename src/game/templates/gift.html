@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block jumbotron %}
+<div class="container">
+	<div class="row">
+	<div class="col-sm-6 col-sm-offset-3">
+		<img src="{% static 'image/cake.jpg' %}" class="img-responsive" style="width:100%" />
+
+		<h1>{{title}}</h1>
+		<br>
+		<h2>Your cake is ready downstairs! Enjoy!</h2>
+		<br>
+		<h1>Stay healthy and happy always!</h1>
+		<h3>~from wei &amp; mama</h3>
+		<br><br>
+		<p>
+		<a class="btn btn-lg btn-primary" href="{% url 'home' %}" role="button">Play again</a>
+		</p>
+	</div>
+	</div>
+</div>
+
+{% endblock %}
