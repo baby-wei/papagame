@@ -2,6 +2,7 @@ scripts/
 include/
 lib/
 tcl/
+webfaction/
 pip-selfcheck.json
 .DS_STORE
 .Python

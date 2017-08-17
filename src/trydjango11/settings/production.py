@@ -27,7 +27,12 @@ if not settings.DEBUG:
 	# SECURITY WARNING: don't run with debug turned on in production!
 	DEBUG = False
 
-	ALLOWED_HOSTS = []
+	# ADMINS = (
+	# 	("babywei", "babywei@gmail.com"),
+
+	# 	)
+
+	ALLOWED_HOSTS = ['papagame.babywei.webfactional.com']
 
 
 	# Application definition
@@ -39,9 +44,6 @@ if not settings.DEBUG:
 	    'django.contrib.sessions',
 	    'django.contrib.messages',
 	    'django.contrib.staticfiles',
-
-	    # Third party apps
-	    'bootstrap3',
 
 	    # my apps
 	    'game',
@@ -83,8 +85,10 @@ if not settings.DEBUG:
 
 	DATABASES = {
 	    'default': {
-	        'ENGINE': 'django.db.backends.sqlite3',
-	        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+	        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+	        'NAME': 'papagame',
+	        'USER': 'babywei',
+	        'PASSWORD': 'ilovebabywei123',
 	    }
 	}
 
@@ -124,31 +128,15 @@ if not settings.DEBUG:
 
 	# Static files (CSS, JavaScript, Images)
 	# https://docs.djangoproject.com/en/1.11/howto/static-files/
+		
+	STATIC_URL = '/static/'
 
-	# Heroku settings
-	cwd = os.getcwd()
-	if cwd == '/app' or cwd[:4] == '/tmp':
-		import dj_database_url
-		DATABASES = {
-			'default': dj_database_url.config(default='postgres://localhost')
-		}
-		
-		# Honor the 'X-Forwarded-Proto' header for request.is_secure().
-		SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-		
-		# Allow only Heroku to host the project.
-		ALLOWED_HOSTS = [*]
-		
-		DEBUG = False
-		
-		STATIC_URL = '/static/'
+	STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_env", "static_root")
 
-		STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_env", "static_root")
-
-		STATICFILES_DIRS = (
-		    os.path.join(BASE_DIR, "static_in_pro", "our_static"),
-		    #'/var/www/static/',
-		)
+	STATICFILES_DIRS = (
+	    os.path.join(BASE_DIR, "static_in_pro", "our_static"),
+	    #'/var/www/static/',
+	)
 	
 
 

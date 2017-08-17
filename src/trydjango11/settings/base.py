@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 SECRET_KEY = '_7#e(po9zj)x-kchp)u)2s1w99!4vug^=sepzdo$75lzox7n6$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -78,8 +78,10 @@ WSGI_APPLICATION = 'trydjango11.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'papagame',
+        'USER': 'babywei',
+        'PASSWORD': 'ilovebabywei123',
     }
 }
 
@@ -122,7 +124,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_env", "static_root")
+STATIC_ROOT = '/home/babywei/webapps/papagame_static/'
+#os.path.join(os.path.dirname(BASE_DIR), "static_env", "static_root")
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static_in_pro", "our_static"),

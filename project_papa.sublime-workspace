@@ -80,27 +80,10 @@
 	"buffers":
 	[
 		{
-			"file": "src/trydjango11/settings/__init__.py",
-			"settings":
-			{
-				"buffer_size": 200,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "webfaction/httpd.conf",
-			"settings":
-			{
-				"buffer_size": 1217,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "src/trydjango11/settings/base.py",
 			"settings":
 			{
-				"buffer_size": 3348,
+				"buffer_size": 3445,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -118,7 +101,25 @@
 			"file": "src/trydjango11/settings/production.py",
 			"settings":
 			{
-				"buffer_size": 3579,
+				"buffer_size": 3649,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "webfaction/httpd.conf",
+			"settings":
+			{
+				"buffer_size": 1217,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/trydjango11/wsgi.py",
+			"settings":
+			{
+				"buffer_size": 584,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -160,15 +161,14 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/ASUS/Documents/python_work/Web Application/papagame/src",
-		"/C/Users/ASUS/Documents/python_work/Web Application/papagame/src/game",
-		"/C/Users/ASUS/Documents/python_work/Web Application/papagame/src/trydjango11",
-		"/C/Users/ASUS/Documents/python_work/Web Application/papagame/src/trydjango11/settings"
+		"/C/Users/ASUS/Documents/python_work/Web Application/papagame/src"
 	],
 	"file_history":
 	[
-		"/C/Users/ASUS/Documents/python_work/Web Application/papagame/src/trydjango11/old_settings.py",
+		"/C/Users/ASUS/Documents/python_work/Web Application/papagame/myproject/myproject/wsgi.py",
 		"/C/Users/ASUS/Documents/python_work/Web Application/papagame/src/trydjango11/settings/__init__.py",
+		"/C/Users/ASUS/Documents/python_work/Web Application/papagame/webfaction/httpd.conf",
+		"/C/Users/ASUS/Documents/python_work/Web Application/papagame/src/trydjango11/old_settings.py",
 		"/C/Users/ASUS/Documents/python_work/Web Application/papagame/src/trydjango11/settings.py",
 		"/C/Users/ASUS/Documents/python_work/Web Application/papagame/src/trydjango11/urls.py",
 		"/C/Users/ASUS/Documents/python_work/Web Application/papagame/src/game/views.py",
@@ -298,80 +298,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/trydjango11/settings/__init__.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 200,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "webfaction/httpd.conf",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1217,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1216,
-								1216
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "src/trydjango11/settings/base.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3348,
+						"buffer_size": 3445,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3347,
-								3347
+								3443,
+								3443
 							]
 						],
 						"settings":
@@ -381,14 +325,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1485.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 1,
 					"file": "src/trydjango11/settings/local.py",
 					"semi_transient": false,
 					"settings":
@@ -418,20 +362,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 2,
 					"file": "src/trydjango11/settings/production.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3579,
+						"buffer_size": 3649,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2514,
-								2514
+								2585,
+								2385
 							]
 						],
 						"settings":
@@ -440,10 +384,66 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1620.0,
+						"translation.y": 855.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "webfaction/httpd.conf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1217,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1216,
+								1216
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/trydjango11/wsgi.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 584,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								583,
+								583
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 225.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
